@@ -1,0 +1,76 @@
+%
+% Curriculum Vitae is the personal CV of Giulio Biagini.
+%
+% Copyright (C) 2017 Giulio Biagini - giulio.biagini90@gmail.com
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%
+
+
+
+% - CV template: casual (default), classic, oldstyle or banking
+\documentclass[11pt,a4paper,sans]{moderncv}\moderncvstyle{classic}
+
+% - CV color: blue (default), orange, green, red, purple, grey or black
+\moderncvcolor{blue}
+
+
+
+% reduce document margins
+\usepackage[scale=0.75]{geometry}
+
+% change the width of the dates column
+\setlength{\hintscolumnwidth}{3cm}
+
+% for the 'classic' style, adjust the width of the space allocated to name
+% \setlength{\makecvtitlenamewidth}{10cm}
+
+% to write in italina
+\usepackage[italian]{babel}
+% for accented characters
+\usepackage[utf8]{inputenc}
+% for particular font
+\usepackage{newlfont}
+
+
+
+\title{Curriculum Vit\ae}
+\firstname{Giulio}
+\familyname{Biagini}
+\address{ADDRESS}{Pietracolora, 40041, Bologna}% TODO -> INSERT ADDRESS
+\mobile{MOBILE PHONE}% TODO -> INSERT MOBILE PHONE NUMBER
+\phone{TELEPHONE}% TODO -> INSERT TELEPHONE NUMBER
+\email{giulio.biagini90@gmail.com}
+\homepage{http://giuliobiagini.altervista.org}
+{http://giuliobiagini.altervista.org}
+\photo[70pt][0.4pt]{profile_photo}
+
+
+
+\begin{document}
+
+\input{0_cover_letter}
+
+\makecvtitle
+\input{1_personal_info}
+\input{2_education}
+\input{3_computer_skills}
+\input{4_languages_skills}
+\input{5_other_skills}
+\input{6_working_experiences}
+\input{7_other_experiences}
+\input{8_personal_projects}
+\input{9_personal_interests_and_hobbies}
+
+\end{document}
